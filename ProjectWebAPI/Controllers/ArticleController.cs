@@ -9,7 +9,7 @@ namespace ProjectWebAPI.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
-        private static List<Article> articles = new List<Article>(); // This should be replaced with a database in a real application
+        private static List<Article> articles = new List<Article>(); 
 
         [HttpGet]
         [AllowAnonymous]

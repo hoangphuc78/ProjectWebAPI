@@ -8,7 +8,7 @@ namespace ProjectWebAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private List<User> users = new List<User>(); // This should be replaced with a database in a real application
+        private List<User> users = new List<User>(); 
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] User loginUser)
@@ -18,14 +18,14 @@ namespace ProjectWebAPI.Controllers
             {
                 return Unauthorized();
             }
-            // Generate JWT token (implementation needed)
+          
             return Ok("Token");
         }
 
         [HttpPost("logout")]
         public IActionResult Logout()
         {
-            // Handle logout logic
+            
             return Ok();
         }
     }

@@ -5,7 +5,7 @@ namespace ProjectWebAPI.Controllers
 {
     public class CategoryController : Controller
     {
-        private static List<Category> categories = new List<Category>(); // This should be replaced with a database in a real application
+        private static List<Category> categories = new List<Category>(); 
 
         [HttpGet]
         public IActionResult GetAll()
